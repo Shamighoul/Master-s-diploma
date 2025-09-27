@@ -1,2 +1,2 @@
 # Master-s-diploma
-human and LLM detection and classification 
+Robustness of Deep Neural Networks
