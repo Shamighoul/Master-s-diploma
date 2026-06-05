@@ -1,0 +1,53 @@
+\documentclass{mipt-thesis-ms}
+% Следующие две строки нужны только для biblatex. Для inline-библиографии их следует убрать.
+\usepackage{mipt-thesis-biblatex}
+\addbibresource{example.bib}
+\usepackage{booktabs}
+
+% Подключение пакетов для алгоритмов
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\title{Спектральные характеристики представлений в CNN и трансформерах}
+\author{Шамигулов И.\,И.}
+\supervisor{Калмыков Н.\,И.}
+\referee{Номинаньный Н.\,Н.}       % требуется только для mipt-thesis-ms
+\groupnum{М05-412г}
+\faculty{Физтех-школа прикладной математики и информатики}
+\department{Кафедра алгоритмов и технологий программирования}
+
+\setlength{\parindent}{1.25cm}
+
+% Локализация надписей
+\floatname{algorithm}{Алгоритм}
+\renewcommand{\algorithmicrequire}{\textbf{Вход:}}
+\renewcommand{\algorithmicensure}{\textbf{Выход:}}
+\setcounter{tocdepth}{1}
+\begin{document}
+
+\titlepage \addemptypage
+
+\newpage
+\thispagestyle{plain}      % номер внизу по центру (если нужен)
+
+\input{chap0-annatation}
+
+\newpage
+\tableofcontents % содержание
+\pagestyle{miptthesis}
+
+\input{chap1-intro}
+\input{chap2-teor}
+\input{chap3-metods}
+\input{chap4-result}
+\input{chap5-final}
+\printbib  %Литература
+
+% Следующие строки необходимо раскомментировать, а предыдущую закомментировать, если используется inline-библиография.
+%\begin{thebibliography}{99}
+%    \bibitem{langmuir26}
+%        H. Mott-Smith, I. Langmuir. ``The theory of collectors in gaseous discharges''. \emph{Phys. Rev.} \textbf{28} (1926)
+%\end{thebibliography}
+
+\end{document}
