@@ -31,7 +31,7 @@
 
 % После загрузки базового класса добавьте:
 \RequirePackage{anyfontsize}
-\renewcommand{\normalsize}{\fontsize{14}{19}\selectfont} % 14pt шрифт, межстрочный интервал 16.8pt (1.2 от 14)
+\renewcommand{\normalsize}{\fontsize{14}{18}\selectfont} % 14pt шрифт, межстрочный интервал 16.8pt (1.2 от 14)
 
 %%%%% Set up correct formatting %%%%%
 \geometry{left=3cm}
@@ -207,40 +207,42 @@
 \renewcommand{\titlepage}{%
     \pagestyle{empty}
     \begin{center}
-        {\bf Федеральное государственное автономное образовательное учреждение высшего образования \\
-        Московский физико-технический институт (национальный 
+        {Федеральное государственное автономное образовательное учреждение высшего образования \\
+        Московский физико-технический институт \\ (национальный 
         исследовательский университет) \\ }
-        \vspace{1cm}
-
+        % \vspace{1cm}
         \mtfacultytext{} \\
         \mtdepartmenttext{} \\
-
-
-        \vspace{3em}
-
-        Выпускная квалификационная работа магистра по специальности 09.04.01 
-        <<Информатика и вычислительная техника>>
     \end{center}
+
+        % \vspace{3em}
+    \begin{flushleft}
+    
+        \textbf{Направление подготовки / специальность:} 09.04.01 
+        Информатика и вычислительная техника \\
+        \textbf{Направленность (профиль) подготовки:} Прикладная математика и информатика 
+    \end{flushleft}
 
     \begin{center}
         \vspace{\fill}
         \singlespacing
 
-        \LARGE \mttitletext{}
-
+        {\bf \LARGE \mttitletext{}} \\
+        {\small(магистерская диссертация)}
+        
         \vspace{\fill}
     \end{center}
 
 
     \begin{flushright}
-        Студент \mtgroupnumtext{} группы \\
+        \textbf{Студент:} \\
         \mtauthortext{} \\
         \vspace{3em}
-        Научный руководитель \\
+        \textbf{Научный руководитель:} \\
         \mtsupervisortext{} \\
         \vspace{3em}
-        Рецензент \\
-        \mtrefereetext{} \\
+        % Рецензент \\
+        % \mtrefereetext{} \\
     \end{flushright}
 
     \vspace{6em}
